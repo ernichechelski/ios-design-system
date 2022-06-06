@@ -2,6 +2,8 @@ import SwiftUI
 
 public struct PrimaryButton: ButtonStyle {
 
+    public init() {}
+
     public func makeBody(configuration: Configuration) -> some View {
         configuration
             .label
