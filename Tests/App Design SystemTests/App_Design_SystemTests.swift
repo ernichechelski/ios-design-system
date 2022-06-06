@@ -6,6 +6,6 @@ final class App_Design_SystemTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(App_Design_System().text, "Hello, World!")
+        XCTAssertEqual(ContentView_Previews.text, "Hello Button!")
     }
 }

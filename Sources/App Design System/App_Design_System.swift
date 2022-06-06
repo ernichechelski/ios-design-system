@@ -1,6 +1,22 @@
-public struct App_Design_System {
-    public private(set) var text = "Hello, World!"
+import SwiftUI
 
-    public init() {
+public struct PrimaryButton: ButtonStyle {
+
+    public func makeBody(configuration: Configuration) -> some View {
+        configuration
+            .label
+            .foregroundColor(Color.green)
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+
+    static let text = "Hello Button!"
+
+    static var previews: some View {
+        Button {
+        } label: {
+            Text(ContentView_Previews.text)
+        }.buttonStyle(PrimaryButton())
     }
 }
